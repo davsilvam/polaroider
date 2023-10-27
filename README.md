@@ -44,7 +44,7 @@ Tecnologias utilizadas no projeto.
 ### **Construção do site**
 
 - [TypeScript](https://www.typescriptlang.org)
-- [Next 13 (App Router)](https://vuejs.org)
+- [Next 13 (App Router)](https://nextjs.org)
 - [Radix UI](https://www.radix-ui.com)
 
 ### **Estilização**
