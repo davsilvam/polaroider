@@ -17,7 +17,7 @@
 
 ## :camera_flash: **Sobre o Projeto**
 
-O Polaroider permite que você transforme suas fotos em polaroids, com um estilo retrô e vintage.
+O Polaroider permite que você transforme suas fotos em polaroids, com um estilo retrô e vintage. Este é um projeto criado para ser demonstrado no meu trabalho final da disciplina de Matemática Aplicada a Multimídia, do curso de Sistemas e Mídias Digitais da Universidade Federal do Ceará.
 
 <p align="center">
    <a href="https://polaroider.vercel.app">Veja o projeto completo aqui.</a>
