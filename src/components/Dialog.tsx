@@ -25,7 +25,7 @@ export function Dialog({ children, clearMetadata, isOpen, url }: DialogProps) {
         <Overlay className="fixed inset-0 z-20 bg-zinc-900/50" />
 
         <Content className="fixed inset-0 z-20 flex items-center justify-center">
-          <div className="flex flex-col-reverse items-center gap-10 rounded-md border border-zinc-100 bg-zinc-50 p-10 shadow-lg md:flex-row">
+          <div className="flex flex-col-reverse items-center gap-10 rounded-md border border-zinc-100 bg-zinc-100 p-10 shadow-lg md:flex-row">
             <div className="max-w-xs space-y-2">
               <Title className="text-2xl font-semibold">Aí está!</Title>
 
