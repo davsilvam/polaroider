@@ -16,7 +16,7 @@ export default function Home() {
     clearMetadata,
     cropDialogIsOpen,
     downloadDialogIsOpen,
-    loadCanvas,
+    getCroppedImage,
     loadImageToCrop,
     metadata,
     polaroidURL,
@@ -59,7 +59,7 @@ export default function Home() {
         <CropDialog
           clearMetadata={clearMetadata}
           isOpen={cropDialogIsOpen}
-          loadCanvas={loadCanvas}
+          getCroppedImage={getCroppedImage}
         >
           <div className="flex items-center justify-center">
             <div>

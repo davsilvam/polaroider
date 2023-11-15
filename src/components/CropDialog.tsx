@@ -15,14 +15,14 @@ interface CropDialogProps {
   children: ReactNode
   clearMetadata: () => void
   isOpen: boolean
-  loadCanvas: () => void
+  getCroppedImage: () => void
 }
 
 export function CropDialog({
   children,
   clearMetadata,
   isOpen,
-  loadCanvas,
+  getCroppedImage,
 }: CropDialogProps) {
   return (
     <Root open={isOpen}>
@@ -41,7 +41,7 @@ export function CropDialog({
 
               <div className="flex w-full items-center gap-5">
                 <button
-                  onClick={loadCanvas}
+                  onClick={getCroppedImage}
                   className="flex w-fit items-center gap-3 rounded bg-zinc-800 px-5 py-3 text-zinc-50"
                 >
                   Prosseguir <ArrowUpRight className="h-4 w-4" />

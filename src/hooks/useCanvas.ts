@@ -48,7 +48,7 @@ export function useCanvas() {
     }
   }, [metadata, cropDialogIsOpen])
 
-  async function loadCanvas() {
+  function getCroppedImage() {
     if (!cropper) return
 
     const croppedImage = cropper.getCroppedCanvas().toDataURL('image/png')
@@ -100,7 +100,7 @@ export function useCanvas() {
     clearMetadata,
     cropDialogIsOpen,
     downloadDialogIsOpen,
-    loadCanvas,
+    getCroppedImage,
     loadImageToCrop,
     metadata,
     polaroidURL,
