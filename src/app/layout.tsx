@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { ReactNode } from 'react'
 
+import '../../node_modules/cropperjs/dist/cropper.css'
+
 import './globals.css'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['500', '700', '900'] })

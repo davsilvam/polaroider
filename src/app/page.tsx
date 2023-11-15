@@ -4,15 +4,23 @@ import Img from 'next/image'
 
 import { FileImage } from 'lucide-react'
 
-import { Dialog, Rainbow } from '@/components'
+import { CropDialog, Dialog, Rainbow } from '@/components'
 
 import { useCanvas } from '@/hooks'
 
 import cameraUrl from '../assets/camera.svg'
 
 export default function Home() {
-  const { canvasRef, clearMetadata, loadCanvas, metadata, polaroidURL } =
-    useCanvas()
+  const {
+    canvasRef,
+    clearMetadata,
+    cropDialogIsOpen,
+    downloadDialogIsOpen,
+    loadImageToCrop,
+    metadata,
+    loadCanvas,
+    polaroidURL,
+  } = useCanvas()
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-zinc-50">
@@ -24,8 +32,8 @@ export default function Home() {
         </h1>
 
         <Img
-          className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[320px]"
           alt="Polaroid camera illustration."
+          className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[320px]"
           src={cameraUrl}
         />
 
@@ -39,16 +47,35 @@ export default function Home() {
           </label>
 
           <input
-            onChange={loadCanvas}
-            className="hidden"
+            onChange={loadImageToCrop}
             accept="image/png, image/jpg, image/jpeg"
-            type="file"
-            name="image"
+            className="hidden"
             id="image"
+            name="image"
+            type="file"
           />
         </form>
 
-        {metadata && (
+        <CropDialog
+          clearMetadata={clearMetadata}
+          isOpen={cropDialogIsOpen}
+          loadCanvas={loadCanvas}
+        >
+          <div className="flex items-center justify-center">
+            <div>
+              <Img
+                alt="Image to crop"
+                className="block h-40 w-auto max-w-full md:h-52 lg:h-[320px] xl:h-[400px]"
+                id="image-to-crop"
+                height={metadata?.height ?? 400}
+                src=""
+                width={metadata?.width ?? 400}
+              />
+            </div>
+          </div>
+        </CropDialog>
+
+        {downloadDialogIsOpen && (
           <Dialog clearMetadata={clearMetadata} isOpen url={polaroidURL}>
             <canvas className="w-60 shadow-2xl" ref={canvasRef}></canvas>
           </Dialog>
