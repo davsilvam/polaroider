@@ -16,9 +16,9 @@ export default function Home() {
     clearMetadata,
     cropDialogIsOpen,
     downloadDialogIsOpen,
+    loadCanvas,
     loadImageToCrop,
     metadata,
-    loadCanvas,
     polaroidURL,
   } = useCanvas()
 
@@ -65,7 +65,7 @@ export default function Home() {
             <div>
               <Image
                 alt="Image to crop"
-                className="block h-40 w-auto max-w-full lg:h-52 xl:h-60"
+                className="block h-40 w-fit lg:h-52 xl:h-60"
                 id="image-to-crop"
                 height={metadata?.height ?? 400}
                 src=""

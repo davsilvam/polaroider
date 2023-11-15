@@ -14,33 +14,6 @@ export function useCanvas() {
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  function drawImageOnCanvas(src: string) {
-    const img = new Image()
-
-    img.setAttribute('src', src)
-    img.addEventListener('load', () => {
-      const canvas = canvasRef.current
-
-      if (!canvas) return
-
-      const context = canvas.getContext('2d')
-
-      if (!context) return
-
-      canvas.width = 464
-      canvas.height = 600
-
-      context.fillStyle = 'rgb(248 250 252)'
-      context.fillRect(0, 0, canvas.width, canvas.height)
-
-      context.filter = 'sepia(0.6) contrast(1.2) saturate(0.8)'
-
-      context.drawImage(img, 32, 32, 400, 400)
-
-      setPolaroidURL(canvas.toDataURL('image/png', 2.0))
-    })
-  }
-
   async function loadImageToCrop({
     currentTarget,
   }: FormEvent<HTMLInputElement>) {
@@ -69,6 +42,7 @@ export function useCanvas() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       cropper = new Cropper(imageToCrop, {
         aspectRatio: 1 / 1,
+        background: false,
         viewMode: 0,
       })
     }
@@ -86,6 +60,33 @@ export function useCanvas() {
     drawImageOnCanvas(croppedImage)
   }
 
+  function drawImageOnCanvas(src: string) {
+    const img = new Image()
+
+    img.setAttribute('src', src)
+    img.addEventListener('load', () => {
+      const canvas = canvasRef.current
+
+      if (!canvas) return
+
+      const context = canvas.getContext('2d')
+
+      if (!context) return
+
+      canvas.width = 464
+      canvas.height = 600
+
+      context.fillStyle = 'rgb(248 250 252)'
+      context.fillRect(0, 0, canvas.width, canvas.height)
+
+      context.filter = 'sepia(0.6) contrast(1.2) saturate(0.8)'
+
+      context.drawImage(img, 32, 32, 400, 400)
+
+      setPolaroidURL(canvas.toDataURL('image/png', 2.0))
+    })
+  }
+
   function clearMetadata() {
     setMetadata(undefined)
     setPolaroidURL('')
@@ -95,13 +96,13 @@ export function useCanvas() {
   }
 
   return {
-    metadata,
-    polaroidURL,
+    canvasRef,
+    clearMetadata,
     cropDialogIsOpen,
     downloadDialogIsOpen,
-    canvasRef,
-    loadImageToCrop,
     loadCanvas,
-    clearMetadata,
+    loadImageToCrop,
+    metadata,
+    polaroidURL,
   }
 }
