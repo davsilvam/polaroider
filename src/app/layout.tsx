@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     siteName: 'Polaroider',
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://polaroider.vercel.app/og-image.png',
+    url: 'https://polaroider.vercel.app',
     images: [
       {
-        url: '',
-        width: 1200,
-        height: 630,
+        url: 'https://polaroider.vercel.app/og-image.png',
+        width: 2100,
+        height: 1080,
         alt: 'Polaroider',
       },
     ],
