@@ -1,3 +1,3 @@
 export * from './CropDialog'
-export * from './Dialog'
+export * from './DownloadDialog'
 export * from './Rainbow'

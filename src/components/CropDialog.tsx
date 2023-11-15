@@ -35,7 +35,8 @@ export function CropDialog({
               <Title className="text-2xl font-semibold">Ajuste a imagem</Title>
 
               <Description className="pb-3">
-                Você pode baixar sua imagem ou continuar criando recordações!
+                Ajuste a imagem para que ela fique centralizada e com o tamanho
+                desejado.
               </Description>
 
               <div className="flex w-full items-center gap-5">

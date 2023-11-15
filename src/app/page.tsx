@@ -1,14 +1,14 @@
 'use client'
 
-import Img from 'next/image'
+import Image from 'next/image'
 
 import { FileImage } from 'lucide-react'
 
-import { CropDialog, Dialog, Rainbow } from '@/components'
+import { CropDialog, DownloadDialog, Rainbow } from '@/components'
 
 import { useCanvas } from '@/hooks'
 
-import cameraUrl from '../assets/camera.svg'
+import camera from '../assets/camera.svg'
 
 export default function Home() {
   const {
@@ -31,10 +31,10 @@ export default function Home() {
           Traga o passado <br /> para suas fotos
         </h1>
 
-        <Img
+        <Image
           alt="Polaroid camera illustration."
           className="w-full max-w-[200px] sm:max-w-[240px] md:max-w-[320px]"
-          src={cameraUrl}
+          src={camera}
         />
 
         <form className="w-full sm:max-w-[320px]">
@@ -63,9 +63,9 @@ export default function Home() {
         >
           <div className="flex items-center justify-center">
             <div>
-              <Img
+              <Image
                 alt="Image to crop"
-                className="block h-40 w-auto max-w-full md:h-52 lg:h-[320px] xl:h-[400px]"
+                className="block h-40 w-auto max-w-full lg:h-52 xl:h-60"
                 id="image-to-crop"
                 height={metadata?.height ?? 400}
                 src=""
@@ -76,9 +76,13 @@ export default function Home() {
         </CropDialog>
 
         {downloadDialogIsOpen && (
-          <Dialog clearMetadata={clearMetadata} isOpen url={polaroidURL}>
+          <DownloadDialog
+            clearMetadata={clearMetadata}
+            isOpen
+            url={polaroidURL}
+          >
             <canvas className="w-60 shadow-2xl" ref={canvasRef}></canvas>
-          </Dialog>
+          </DownloadDialog>
         )}
       </div>
     </main>

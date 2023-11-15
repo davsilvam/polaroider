@@ -11,14 +11,19 @@ import {
 } from '@radix-ui/react-dialog'
 import { DownloadCloud, X } from 'lucide-react'
 
-interface DialogProps {
+interface DownloadDialogProps {
   children: ReactNode
   clearMetadata: () => void
   isOpen: boolean
   url: string
 }
 
-export function Dialog({ children, clearMetadata, isOpen, url }: DialogProps) {
+export function DownloadDialog({
+  children,
+  clearMetadata,
+  isOpen,
+  url,
+}: DownloadDialogProps) {
   return (
     <Root open={isOpen}>
       <Portal>
