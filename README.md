@@ -46,6 +46,7 @@ Tecnologias utilizadas no projeto.
 - [TypeScript](https://www.typescriptlang.org)
 - [Next 13 (App Router)](https://nextjs.org)
 - [Radix UI](https://www.radix-ui.com)
+- [Cropper.js](https://fengyuanchen.github.io/cropperjs/)
 
 ### **Estilização**
 
