@@ -19,9 +19,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://polaroider.vercel.app/og-image.png',
-        width: 2100,
-        height: 1080,
+        width: 1080,
+        height: 540,
         alt: 'Polaroider',
+        type: 'image/png',
       },
     ],
   },
