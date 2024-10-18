@@ -28,13 +28,13 @@ Uma aplicação que transforma suas fotos em polaroids, com um estilo retrô e v
 ### _Desktop e Telas Maiores_
 
 <h1 align="center">
-    <img src="./.github/desktop.png" style="width: 70%">
+    <img src="./.github/desktop-banner.png" style="width: 70%">
 </h1>
 
 ### _Mobile e Telas Menores_
 
 <h1 align="center">
-    <img src="./.github/mobile.png" style="width: 40%;">
+    <img src="./.github/mobile-banner.png" style="width: 70%;">
 </h1>
 
 ## :wrench: **Tecnologias**
