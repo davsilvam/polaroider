@@ -66,14 +66,14 @@ Tecnologias utilizadas no projeto.
 
 - [Node](https://nodejs.org/) e um gerenciador de pacotes, usei [pnpm](https://pnpm.io/pt/).
 
-```sh
+```zsh
 # Caso não tenha o pnpm, execute:
 npm install -g pnpm
 ```
 
 Recomendo que veja a [documentação de configuração do Next](https://nextjs.org/docs/getting-started/installation).
 
-```sh
+```zsh
 # Clonando o projeto
 git clone https://github.com/davsilvam/polaroider.git
 
