@@ -1,17 +1,22 @@
+<h1 align="center">
+   <img height="80" src="https://emojigraph.org/media/microsoft/camera_1f4f7.png">
+   <br>
+   <span>Polaroider</span>
+</h1>
+
+<h4 align="center">
+   Traga o passado para suas fotos.
+</h4>
+
 <p align="center">
-   <img src="https://emojigraph.org/media/microsoft/brick_1f9f1.png">
+   <a href="#camera_flash-sobre-o-projeto">Sobre o Projeto</a> •
+   <a href="#art-visual-do-projeto">Visual do Projeto</a> •
+   <a href="#wrench-tecnologias">Tecnologias</a> •
+   <a href="#rocket-configurações-e-instalação">Configurações e Instalação</a> •
+   <a href="#balance_scale-licença">Licença</a>
 </p>
 
-<h1 align="center">Polaroider</h1>
-
 ![banner](./.github/banner.png)
-
-## :bookmark: **Sumário**
-- [Sobre o Projeto](#camera_flash-sobre-o-projeto)
-- [Visual do Projeto](#art-visual-do-projeto)
-- [Tecnologias](#wrench-tecnologias)
-- [Configurações e Instalação](#rocket-configurações-e-instalação)
-- [Licença](#balance_scale-licença)
 
 ## :camera_flash: **Sobre o Projeto**
 
