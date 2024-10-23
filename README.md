@@ -1,6 +1,8 @@
-# Polaroider
+<p align="center">
+ <img src="./.github/logo.svg"/>
+</p>
 
-<img src="./.github/banner.png" />
+<h1 align="center">Polaroider</h1>
 
 ## :bookmark: **Sumário**
 - [Sobre o Projeto](#camera_flash-sobre-o-projeto)
