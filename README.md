@@ -1,8 +1,10 @@
 <p align="center">
- <img src="./.github/logo.svg"/>
+   <img src="https://emojigraph.org/media/microsoft/brick_1f9f1.png">
 </p>
 
 <h1 align="center">Polaroider</h1>
+
+![banner](./.github/banner.png)
 
 ## :bookmark: **Sumário**
 - [Sobre o Projeto](#camera_flash-sobre-o-projeto)
