@@ -29,7 +29,7 @@ Uma aplicação que transforma suas fotos em polaroids, com um estilo retrô e v
 ## :art: **Visual do Projeto**
 
 ![Desktop screenshot.](./.github/desktop.png)
-![Desktop screenshot.](./.github/mobile.png)
+![Mobile screenshot.](./.github/mobile.png)
 
 ## :wrench: **Tecnologias**
 
