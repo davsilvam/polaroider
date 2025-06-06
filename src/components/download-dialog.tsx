@@ -40,7 +40,7 @@ export function DownloadDialog({
 
               <div className="flex w-full items-center gap-5">
                 <a
-                  className="flex w-fit items-center gap-3 rounded bg-zinc-800 px-5 py-3 text-zinc-50"
+                  className="flex w-fit items-center gap-3 rounded-sm bg-zinc-800 px-5 py-3 text-zinc-50"
                   download="polaroid.png"
                   href={url}
                 >
@@ -49,7 +49,7 @@ export function DownloadDialog({
 
                 <Close
                   onClick={clearMetadata}
-                  className="flex w-fit items-center gap-3 rounded border border-zinc-900 px-5 py-3 text-zinc-900"
+                  className="flex w-fit items-center gap-3 rounded-sm border border-zinc-900 px-5 py-3 text-zinc-900"
                 >
                   Fechar <X className="h-4 w-4" />
                 </Close>

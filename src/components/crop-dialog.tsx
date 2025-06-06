@@ -42,7 +42,7 @@ export function CropDialog({
               <div className="flex w-full items-center gap-5">
                 <button
                   onClick={getCroppedImage}
-                  className="flex w-fit items-center gap-3 rounded bg-zinc-800 px-5 py-3 text-zinc-50"
+                  className="flex w-fit items-center gap-3 rounded-sm bg-zinc-800 px-5 py-3 text-zinc-50"
                   type="button"
                 >
                   Prosseguir <ArrowUpRight className="h-4 w-4" />
@@ -50,7 +50,7 @@ export function CropDialog({
 
                 <Close
                   onClick={clearMetadata}
-                  className="flex w-fit items-center gap-3 rounded border border-zinc-900 px-5 py-3 text-zinc-900"
+                  className="flex w-fit items-center gap-3 rounded-sm border border-zinc-900 px-5 py-3 text-zinc-900"
                 >
                   Fechar <X className="h-4 w-4" />
                 </Close>

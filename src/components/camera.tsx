@@ -26,9 +26,9 @@ export function Camera() {
       <path
         d="M390.124 187.369V50.1791C390.124 50.1791 389.602 39.5933 386.267 34.7521C382.932 29.9109 373.044 25.3857 373.044 25.3857H286.543M390.124 187.369L405 230.895M390.124 187.369H290.399M405 230.895H262.3M405 230.895L403.048 265.055M5 230.895L19.876 187.369M5 230.895H147.7M5 230.895L6.95199 265.055M19.876 187.369V118.774V50.1791C19.876 50.1791 20.6514 40.0396 23.7328 34.7521C26.4948 30.0125 36.9559 25.3857 36.9559 25.3857H123.457M19.876 187.369H93.7052M111.887 187.369H139.986M6.95199 265.055L10.5096 327.314L33.0992 343.292H376.901L399.49 327.314L403.048 265.055M6.95199 265.055H403.048M123.457 25.3857H205H286.543M123.457 25.3857C126.763 16.5702 130.069 9.40771 136.68 5H273.32C279.931 9.40771 284.339 16.5702 286.543 25.3857"
         stroke="#0C0C0D"
-        stroke-width="8.81543"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8.81543"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <rect
         x="41.9146"
@@ -38,7 +38,7 @@ export function Camera() {
         rx="8.81543"
         fill="#323233"
         stroke="#0C0C0D"
-        stroke-width="6.61157"
+        strokeWidth="6.61157"
       />
       <rect
         x="41.9146"
@@ -56,7 +56,7 @@ export function Camera() {
         rx="8.81543"
         fill="#1D1E20"
         stroke="#0C0C0D"
-        stroke-width="6.61157"
+        strokeWidth="6.61157"
       />
       <circle
         cx="340.537"
@@ -64,7 +64,7 @@ export function Camera() {
         r="22.0386"
         fill="#2E3033"
         stroke="#0C0C0D"
-        stroke-width="3.30579"
+        strokeWidth="3.30579"
       />
       <circle
         cx="340.537"
@@ -72,7 +72,7 @@ export function Camera() {
         r="13.2231"
         fill="#45484D"
         stroke="#0C0C0D"
-        stroke-width="2.20386"
+        strokeWidth="2.20386"
       />
       <path
         d="M341.198 73.595C341.198 75.8772 339.348 77.7273 337.066 77.7273C334.784 77.7273 332.934 75.8772 332.934 73.595C332.934 71.3129 334.784 69.4628 337.066 69.4628C339.348 69.4628 341.198 71.3129 341.198 73.595Z"
@@ -88,28 +88,28 @@ export function Camera() {
         r="74.9311"
         fill="#1D1E20"
         stroke="#0C0C0D"
-        stroke-width="8.81543"
+        strokeWidth="8.81543"
       />
       <circle
         cx="205"
         cy="116.295"
         r="62.8099"
         stroke="#FCFCF7"
-        stroke-width="3.30579"
+        strokeWidth="3.30579"
       />
       <circle
         cx="205.551"
         cy="116.846"
         r="52.3416"
         stroke="#292A2C"
-        stroke-width="2.20386"
+        strokeWidth="2.20386"
       />
       <circle
         cx="205.551"
         cy="116.846"
         r="57.8512"
         stroke="#292A2C"
-        stroke-width="2.20386"
+        strokeWidth="2.20386"
       />
       <circle
         cx="205"
@@ -117,7 +117,7 @@ export function Camera() {
         r="44.0771"
         fill="#1D1E20"
         stroke="#292A2C"
-        stroke-width="7.7135"
+        strokeWidth="7.7135"
       />
       <circle cx="205" cy="116.295" r="22.0386" fill="#292A2C" />
       <circle cx="193.43" cy="102.521" r="13.7741" fill="#FAFAFA" />
@@ -128,7 +128,7 @@ export function Camera() {
         r="22.0386"
         fill="#E71302"
         stroke="#0C0C0D"
-        stroke-width="6.61157"
+        strokeWidth="6.61157"
       />
     </svg>
   )
