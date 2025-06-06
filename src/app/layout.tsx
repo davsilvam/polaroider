@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import '../../node_modules/cropperjs/dist/cropper.css'
 

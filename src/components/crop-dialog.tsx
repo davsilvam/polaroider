@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import {
   Close,
@@ -32,7 +32,7 @@ export function CropDialog({
         <Content className="fixed inset-0 z-20 flex items-center justify-center">
           <div className="flex flex-col-reverse items-center gap-10 rounded-md border border-zinc-100 bg-zinc-100 p-10 shadow-lg md:flex-row">
             <div className="max-w-xs space-y-2">
-              <Title className="text-2xl font-semibold">Ajuste a imagem</Title>
+              <Title className="font-semibold text-2xl">Ajuste a imagem</Title>
 
               <Description className="pb-3">
                 Ajuste a imagem para que ela fique centralizada e com o tamanho
@@ -43,6 +43,7 @@ export function CropDialog({
                 <button
                   onClick={getCroppedImage}
                   className="flex w-fit items-center gap-3 rounded bg-zinc-800 px-5 py-3 text-zinc-50"
+                  type="button"
                 >
                   Prosseguir <ArrowUpRight className="h-4 w-4" />
                 </button>

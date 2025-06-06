@@ -2,6 +2,7 @@ export function Rainbow() {
   return (
     <svg
       className="absolute w-full scale-y-125 xl:scale-y-75"
+      role="presentation"
       viewBox="0 0 1440 200"
       xmlns="http://www.w3.org/2000/svg"
     >

@@ -28,7 +28,13 @@ export async function getImageMetadata(file: File): Promise<Metadata> {
       reader.readAsDataURL(file)
     })
   }
+
   const { width, height } = await getImageParams(file)
 
-  return { name, width, height, localUrl }
+  return {
+    name,
+    width,
+    height,
+    localUrl,
+  }
 }

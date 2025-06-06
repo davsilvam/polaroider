@@ -1,3 +1,4 @@
-export * from './CropDialog'
-export * from './DownloadDialog'
-export * from './Rainbow'
+export * from './camera'
+export * from './crop-dialog'
+export * from './download-dialog'
+export * from './rainbow'

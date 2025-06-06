@@ -1,8 +1,8 @@
-import { useState, useRef, FormEvent, useEffect } from 'react'
+import { type FormEvent, useEffect, useRef, useState } from 'react'
 
 import Cropper from 'cropperjs'
 
-import { Metadata, getImageMetadata } from '@/utils'
+import { type Metadata, getImageMetadata } from '@/utils'
 
 export function useCanvas() {
   const [metadata, setMetadata] = useState<Metadata>()
@@ -39,14 +39,13 @@ export function useCanvas() {
 
       imageToCrop.src = metadata.localUrl
 
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       cropper = new Cropper(imageToCrop, {
         aspectRatio: 1 / 1,
         background: false,
         viewMode: 0,
       })
     }
-  }, [metadata, cropDialogIsOpen])
+  }, [cropper, metadata, cropDialogIsOpen])
 
   function getCroppedImage() {
     if (!cropper) return
@@ -57,6 +56,7 @@ export function useCanvas() {
     setDownloadDialogIsOpen(true)
 
     if (!croppedImage) return
+
     drawImageOnCanvas(croppedImage)
   }
 

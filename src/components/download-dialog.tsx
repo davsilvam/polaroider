@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import {
   Close,
@@ -32,7 +32,7 @@ export function DownloadDialog({
         <Content className="fixed inset-0 z-20 flex items-center justify-center">
           <div className="flex flex-col-reverse items-center gap-10 rounded-md border border-zinc-100 bg-zinc-100 p-10 shadow-lg md:flex-row">
             <div className="max-w-xs space-y-2">
-              <Title className="text-2xl font-semibold">Aí está!</Title>
+              <Title className="font-semibold text-2xl">Aí está!</Title>
 
               <Description className="pb-3">
                 Você pode baixar sua imagem ou continuar criando recordações!
